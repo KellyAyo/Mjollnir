@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		522C5B02207B8A8F0001B416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B01207B8A8F0001B416 /* AppDelegate.swift */; };
-		522C5B04207B8A8F0001B416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B03207B8A8F0001B416 /* ViewController.swift */; };
-		522C5B07207B8A8F0001B416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522C5B05207B8A8F0001B416 /* Main.storyboard */; };
 		522C5B09207B8A8F0001B416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522C5B08207B8A8F0001B416 /* Assets.xcassets */; };
 		522C5B0C207B8A8F0001B416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522C5B0A207B8A8F0001B416 /* LaunchScreen.storyboard */; };
+		C94C2E0262EBFA0B49D51BF6 /* Pods_Mjollnir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1578393CBCE21007ADC957 /* Pods_Mjollnir.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		061DC331CF17EF865A7C7C7B /* Pods-Mjollnir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mjollnir.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mjollnir/Pods-Mjollnir.debug.xcconfig"; sourceTree = "<group>"; };
+		06F1581B453FA55FCE6E7139 /* Pods-Mjollnir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mjollnir.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mjollnir/Pods-Mjollnir.release.xcconfig"; sourceTree = "<group>"; };
+		2D1578393CBCE21007ADC957 /* Pods_Mjollnir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mjollnir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		522C5AFE207B8A8F0001B416 /* Mjollnir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mjollnir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522C5B01207B8A8F0001B416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		522C5B03207B8A8F0001B416 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		522C5B06207B8A8F0001B416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		522C5B08207B8A8F0001B416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522C5B0B207B8A8F0001B416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522C5B0D207B8A8F0001B416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94C2E0262EBFA0B49D51BF6 /* Pods_Mjollnir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +41,8 @@
 			children = (
 				522C5B00207B8A8F0001B416 /* Mjollnir */,
 				522C5AFF207B8A8F0001B416 /* Products */,
+				6FD07B7DA169A908B557771C /* Pods */,
+				AF01547F16E9D1BFCD1477AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +58,28 @@
 			isa = PBXGroup;
 			children = (
 				522C5B01207B8A8F0001B416 /* AppDelegate.swift */,
-				522C5B03207B8A8F0001B416 /* ViewController.swift */,
-				522C5B05207B8A8F0001B416 /* Main.storyboard */,
 				522C5B08207B8A8F0001B416 /* Assets.xcassets */,
 				522C5B0A207B8A8F0001B416 /* LaunchScreen.storyboard */,
 				522C5B0D207B8A8F0001B416 /* Info.plist */,
 			);
 			path = Mjollnir;
+			sourceTree = "<group>";
+		};
+		6FD07B7DA169A908B557771C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				061DC331CF17EF865A7C7C7B /* Pods-Mjollnir.debug.xcconfig */,
+				06F1581B453FA55FCE6E7139 /* Pods-Mjollnir.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF01547F16E9D1BFCD1477AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D1578393CBCE21007ADC957 /* Pods_Mjollnir.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +89,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 522C5B10207B8A8F0001B416 /* Build configuration list for PBXNativeTarget "Mjollnir" */;
 			buildPhases = (
+				BB362AE13A014DE8D7821EEC /* [CP] Check Pods Manifest.lock */,
 				522C5AFA207B8A8F0001B416 /* Sources */,
 				522C5AFB207B8A8F0001B416 /* Frameworks */,
 				522C5AFC207B8A8F0001B416 /* Resources */,
+				5DFEDE7E3BAF4C848BAF48A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +144,55 @@
 			files = (
 				522C5B0C207B8A8F0001B416 /* LaunchScreen.storyboard in Resources */,
 				522C5B09207B8A8F0001B416 /* Assets.xcassets in Resources */,
-				522C5B07207B8A8F0001B416 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DFEDE7E3BAF4C848BAF48A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mjollnir/Pods-Mjollnir-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AtelierKAUNO/AtelierKAUNO.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AtelierKAUNO.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mjollnir/Pods-Mjollnir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB362AE13A014DE8D7821EEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mjollnir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		522C5AFA207B8A8F0001B416 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522C5B04207B8A8F0001B416 /* ViewController.swift in Sources */,
 				522C5B02207B8A8F0001B416 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +200,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		522C5B05207B8A8F0001B416 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				522C5B06207B8A8F0001B416 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		522C5B0A207B8A8F0001B416 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,6 +327,7 @@
 		};
 		522C5B11207B8A8F0001B416 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 061DC331CF17EF865A7C7C7B /* Pods-Mjollnir.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +346,7 @@
 		};
 		522C5B12207B8A8F0001B416 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F1581B453FA55FCE6E7139 /* Pods-Mjollnir.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
