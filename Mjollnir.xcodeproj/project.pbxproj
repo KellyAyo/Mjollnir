@@ -14,6 +14,8 @@
 		522C5B36207BC3CB0001B416 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B35207BC3CB0001B416 /* HomeDatasourceController.swift */; };
 		522C5B3C207BCCF80001B416 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B3B207BCCF80001B416 /* Cells.swift */; };
 		522C5B3E207BCDA00001B416 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B3D207BCDA00001B416 /* HomeDatasource.swift */; };
+		522C5B40207BE4A90001B416 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B3F207BE4A90001B416 /* TweetCell.swift */; };
+		522C5B85207BFC390001B416 /* InstaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B84207BFC390001B416 /* InstaCell.swift */; };
 		C94C2E0262EBFA0B49D51BF6 /* Pods_Mjollnir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1578393CBCE21007ADC957 /* Pods_Mjollnir.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		522C5B35207BC3CB0001B416 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 		522C5B3B207BCCF80001B416 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		522C5B3D207BCDA00001B416 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		522C5B3F207BE4A90001B416 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		522C5B84207BFC390001B416 /* InstaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				522C5B3B207BCCF80001B416 /* Cells.swift */,
+				522C5B3F207BE4A90001B416 /* TweetCell.swift */,
+				522C5B84207BFC390001B416 /* InstaCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,8 +238,10 @@
 				522C5B3E207BCDA00001B416 /* HomeDatasource.swift in Sources */,
 				522C5B32207B9E3E0001B416 /* LongFormViewController.swift in Sources */,
 				522C5B3C207BCCF80001B416 /* Cells.swift in Sources */,
+				522C5B40207BE4A90001B416 /* TweetCell.swift in Sources */,
 				522C5B36207BC3CB0001B416 /* HomeDatasourceController.swift in Sources */,
 				522C5B02207B8A8F0001B416 /* AppDelegate.swift in Sources */,
+				522C5B85207BFC390001B416 /* InstaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

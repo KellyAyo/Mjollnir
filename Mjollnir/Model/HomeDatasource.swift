@@ -21,7 +21,16 @@ class HomeDatasource: Datasource {
     }
     
     override func cellClasses() -> [DatasourceCell.Type] {
-        return [UserCell.self]
+        
+        return [TweetCell.self, InstaCell.self]
+    }
+    
+    override func cellClass(_ indexPath: IndexPath) -> DatasourceCell.Type? {
+        if indexPath.item == 2 {
+            return TweetCell.self
+        }
+        
+        return InstaCell.self
     }
     
     override func item(_ indexPath: IndexPath) -> Any? {
