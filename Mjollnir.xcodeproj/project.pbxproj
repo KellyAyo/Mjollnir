@@ -10,6 +10,10 @@
 		522C5B02207B8A8F0001B416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B01207B8A8F0001B416 /* AppDelegate.swift */; };
 		522C5B09207B8A8F0001B416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522C5B08207B8A8F0001B416 /* Assets.xcassets */; };
 		522C5B0C207B8A8F0001B416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522C5B0A207B8A8F0001B416 /* LaunchScreen.storyboard */; };
+		522C5B32207B9E3E0001B416 /* LongFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B31207B9E3E0001B416 /* LongFormViewController.swift */; };
+		522C5B36207BC3CB0001B416 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B35207BC3CB0001B416 /* HomeDatasourceController.swift */; };
+		522C5B3C207BCCF80001B416 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B3B207BCCF80001B416 /* Cells.swift */; };
+		522C5B3E207BCDA00001B416 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B3D207BCDA00001B416 /* HomeDatasource.swift */; };
 		C94C2E0262EBFA0B49D51BF6 /* Pods_Mjollnir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1578393CBCE21007ADC957 /* Pods_Mjollnir.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +26,10 @@
 		522C5B08207B8A8F0001B416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522C5B0B207B8A8F0001B416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522C5B0D207B8A8F0001B416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522C5B31207B9E3E0001B416 /* LongFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongFormViewController.swift; sourceTree = "<group>"; };
+		522C5B35207BC3CB0001B416 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
+		522C5B3B207BCCF80001B416 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		522C5B3D207BCDA00001B416 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +65,40 @@
 		522C5B00207B8A8F0001B416 /* Mjollnir */ = {
 			isa = PBXGroup;
 			children = (
+				522C5B37207BCCC30001B416 /* Model */,
+				522C5B3A207BCCE50001B416 /* View */,
+				522C5B38207BCCCB0001B416 /* Controller */,
 				522C5B01207B8A8F0001B416 /* AppDelegate.swift */,
+				522C5B31207B9E3E0001B416 /* LongFormViewController.swift */,
 				522C5B08207B8A8F0001B416 /* Assets.xcassets */,
 				522C5B0A207B8A8F0001B416 /* LaunchScreen.storyboard */,
 				522C5B0D207B8A8F0001B416 /* Info.plist */,
 			);
 			path = Mjollnir;
+			sourceTree = "<group>";
+		};
+		522C5B37207BCCC30001B416 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				522C5B3D207BCDA00001B416 /* HomeDatasource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		522C5B38207BCCCB0001B416 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				522C5B35207BC3CB0001B416 /* HomeDatasourceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		522C5B3A207BCCE50001B416 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				522C5B3B207BCCF80001B416 /* Cells.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6FD07B7DA169A908B557771C /* Pods */ = {
@@ -193,6 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522C5B3E207BCDA00001B416 /* HomeDatasource.swift in Sources */,
+				522C5B32207B9E3E0001B416 /* LongFormViewController.swift in Sources */,
+				522C5B3C207BCCF80001B416 /* Cells.swift in Sources */,
+				522C5B36207BC3CB0001B416 /* HomeDatasourceController.swift in Sources */,
 				522C5B02207B8A8F0001B416 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
