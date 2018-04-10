@@ -16,6 +16,7 @@
 		522C5B3E207BCDA00001B416 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B3D207BCDA00001B416 /* HomeDatasource.swift */; };
 		522C5B40207BE4A90001B416 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B3F207BE4A90001B416 /* TweetCell.swift */; };
 		522C5B85207BFC390001B416 /* InstaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B84207BFC390001B416 /* InstaCell.swift */; };
+		522C5B87207D18D60001B416 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C5B86207D18D60001B416 /* Structs.swift */; };
 		C94C2E0262EBFA0B49D51BF6 /* Pods_Mjollnir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1578393CBCE21007ADC957 /* Pods_Mjollnir.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		522C5B3D207BCDA00001B416 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		522C5B3F207BE4A90001B416 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		522C5B84207BFC390001B416 /* InstaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCell.swift; sourceTree = "<group>"; };
+		522C5B86207D18D60001B416 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				522C5B3D207BCDA00001B416 /* HomeDatasource.swift */,
+				522C5B86207D18D60001B416 /* Structs.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				522C5B36207BC3CB0001B416 /* HomeDatasourceController.swift in Sources */,
 				522C5B02207B8A8F0001B416 /* AppDelegate.swift in Sources */,
 				522C5B85207BFC390001B416 /* InstaCell.swift in Sources */,
+				522C5B87207D18D60001B416 /* Structs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

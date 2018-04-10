@@ -12,45 +12,54 @@ class TweetCell: DatasourceCell {
     
     override var datasourceItem: Any? {
         didSet {
-            nameLabel.text = datasourceItem as? String
+            guard let tweet =  datasourceItem as? Cell else { return }
+            profileImageView.image = tweet.profileImage
+            nameLabel.text = tweet.username
+            timestampLabel.text = tweet.timestamp
+            tweetTextView.text = tweet.tweet
         }
     }
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
+        imageView.layer.cornerRadius = 25
+        imageView.clipsToBounds = true
         return imageView
     }()
     
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "TEST TEST TEST"
-        label.backgroundColor = .green
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         return label
     }()
     
     let timestampLabel: UILabel = {
         let label = UILabel()
-        label.text = "20h"
-        label.backgroundColor = .cyan
+        label.textColor = .gray
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 14)
         return label
     } ()
     
     let optionButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .gray
-        
         return button
     }()
     
     let tweetTextView: UITextView = {
         let textView = UITextView()
-        textView.backgroundColor = .orange
+        textView.font = UIFont.systemFont(ofSize: 15)
+        textView.backgroundColor = .clear
         return textView
     }()
     
     override func setupViews() {
         super.setupViews()
+        
+        separatorLineView.isHidden = false
+        separatorLineView.backgroundColor = UIColor(displayP3Red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+        
         addSubview(profileImageView)
         addSubview(nameLabel)
         addSubview(timestampLabel)
@@ -65,6 +74,6 @@ class TweetCell: DatasourceCell {
         
         optionButton.anchor(profileImageView.topAnchor, left: nil, bottom: nil, right: self.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 12, widthConstant: 30, heightConstant: 20)
         
-        tweetTextView.anchor(nameLabel.bottomAnchor, left: nameLabel.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 12, widthConstant: 0, heightConstant: 0)
+        tweetTextView.anchor(nameLabel.bottomAnchor, left: nameLabel.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: -4, leftConstant: -4, bottomConstant: 0, rightConstant: 12, widthConstant: 0, heightConstant: 0)
     }
 }

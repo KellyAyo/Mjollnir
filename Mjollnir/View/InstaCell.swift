@@ -12,20 +12,27 @@ class InstaCell: DatasourceCell {
     
     override var datasourceItem: Any? {
         didSet {
-            
+            guard let insta =  datasourceItem as? Cell else { return }
+            profileImageView.image = insta.profileImage
+            nameLabel.text = insta.username
+            instaImageView.image = insta.instaImage
+            instaTextView.text = insta.comment
+            timestampLabel.text = insta.timestamp
         }
     }
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .red
+        imageView.image = #imageLiteral(resourceName: "mikePhil")
+        imageView.layer.cornerRadius = 15
+        imageView.clipsToBounds = true
         return imageView
     }()
     
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "TEST TEST TEST"
-        label.backgroundColor = .green
+        label.text = "kellyayo"
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         return label
     }()
     
@@ -38,7 +45,7 @@ class InstaCell: DatasourceCell {
     
     let instaImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = .yellow
+        imageView.image = #imageLiteral(resourceName: "lilLeo")
         return imageView
     }()
     
@@ -68,7 +75,8 @@ class InstaCell: DatasourceCell {
     
     let instaTextView: UITextView = {
         let textView = UITextView()
-        textView.backgroundColor = .red
+        textView.font = UIFont.systemFont(ofSize: 13)
+        textView.backgroundColor = .clear
         return textView
     }()
     
@@ -80,7 +88,8 @@ class InstaCell: DatasourceCell {
     
     let timestampLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .blue
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.textColor = .gray
         return label
     }()
     
@@ -114,7 +123,7 @@ class InstaCell: DatasourceCell {
         
         saveToCollectionButton.anchor(likeButton.topAnchor, left: nil, bottom: nil, right: self.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 8, widthConstant: 30, heightConstant: 30)
         
-        instaTextView.anchor(likeButton.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, topConstant: 8, leftConstant: 8, bottomConstant: 0, rightConstant: 8, widthConstant: 0, heightConstant: 50)
+        instaTextView.anchor(likeButton.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, topConstant: -4, leftConstant: 4, bottomConstant: 0, rightConstant: 8, widthConstant: 0, heightConstant: 60)
         
         moreButton.anchor(instaTextView.bottomAnchor, left: nil, bottom: nil, right: self.rightAnchor, topConstant: -20, leftConstant: 0, bottomConstant: 0, rightConstant: 8, widthConstant: 60, heightConstant: 20)
         
