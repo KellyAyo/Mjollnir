@@ -90,6 +90,7 @@ class InstaCell: DatasourceCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = .gray
+        label.backgroundColor = .clear
         return label
     }()
     
@@ -123,10 +124,10 @@ class InstaCell: DatasourceCell {
         
         saveToCollectionButton.anchor(likeButton.topAnchor, left: nil, bottom: nil, right: self.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 8, widthConstant: 30, heightConstant: 30)
         
-        instaTextView.anchor(likeButton.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, topConstant: -4, leftConstant: 4, bottomConstant: 0, rightConstant: 8, widthConstant: 0, heightConstant: 60)
+        instaTextView.anchor(likeButton.bottomAnchor, left: self.leftAnchor, bottom: self.bottomAnchor, right: self.rightAnchor, topConstant: -4, leftConstant: 4, bottomConstant: 28, rightConstant: 8, widthConstant: 0, heightConstant: 0)
         
         moreButton.anchor(instaTextView.bottomAnchor, left: nil, bottom: nil, right: self.rightAnchor, topConstant: -20, leftConstant: 0, bottomConstant: 0, rightConstant: 8, widthConstant: 60, heightConstant: 20)
         
-        timestampLabel.anchor(instaTextView.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, topConstant: 8, leftConstant: 8, bottomConstant: 0, rightConstant: 8, widthConstant: 0, heightConstant: 25)
+        timestampLabel.anchor(instaTextView.bottomAnchor, left: self.leftAnchor, bottom: nil, right: self.rightAnchor, topConstant: 0, leftConstant: 8, bottomConstant: 0, rightConstant: 8, widthConstant: 0, heightConstant: 25)
     }
 }
